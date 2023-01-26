@@ -8,6 +8,19 @@ from the user
 return the sum of the values inputted by user
 */
 
-const addition = function (a, b) {
+const add = function (a, b) {
     return a + b;
 }
+
+const subtract = function (a, b) {
+    return a - b;
+}
+
+const multiply = function (a * b) {
+    return a * b;
+}
+
+const divide = function (a, b) {
+    return a / b;
+}
+
