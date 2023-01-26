@@ -1,9 +1,6 @@
 // calculator project -- 1/25/23
 
 // declare basic math functions
-// let firstValue = parseInt(prompt('Enter first value: '));
-// let secondValue = parseInt(prompt('Enter second value: '));
-// console.log(firstValue + secondValue);
 
 const add = (a, b) => {
     return a + b;
@@ -38,7 +35,7 @@ const operate = (op, val1, val2) => {
     }
 }
 
-// onclick functions for display
+// onclick functions for display numbers
 let display = document.getElementById('display');
 
 
@@ -82,3 +79,10 @@ let nine = document.getElementById('9');
 nine.addEventListener('click', () => {
     display.textContent = '9';
 })
+
+// applying operator function based on calc btn inputs
+/* when the user clicks on the operator button,
+store the first number,
+also save which operation has been chosen,
+then operate() on them when user clicks on the equals button
+*/
