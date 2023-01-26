@@ -35,10 +35,14 @@ const operate = (op, val1, val2) => {
     }
 }
 
+// declare array of values inputted
+let values = [];
+
 // event listeners for operators
-let addOp = document.getElementById('0');
+let addOp = document.getElementById('add');
 addOp.addEventListener('click', () => {
-    display.textContent = '0';
+    values.push(parseInt(display.textContent));
+    console.log(values);
 })
 
 
@@ -48,43 +52,53 @@ let display = document.getElementById('display');
 
 let zero = document.getElementById('0');
 zero.addEventListener('click', () => {
+    display.textContent = '';
     display.textContent = '0';
 })
 let one = document.getElementById('1');
 one.addEventListener('click', () => {
-    display.textContent = '1';
+    display.textContent = ''
+    display.textContent += '1';
 })
 let two = document.getElementById('2');
 two.addEventListener('click', () => {
-    display.textContent = '2';
+    display.textContent = ''
+    display.textContent += '2';
 })
 let three = document.getElementById('3');
 three.addEventListener('click', () => {
-    display.textContent = '3';
+    display.textContent = ''
+    display.textContent += '3';
 })
 let four = document.getElementById('4');
 four.addEventListener('click', () => {
-    display.textContent = '4';
+    display.textContent = ''
+    display.textContent += '4';
 })
 let five = document.getElementById('5');
 five.addEventListener('click', () => {
+    display.textContent = ''
     display.textContent = '5';
 })
 let six = document.getElementById('6');
 six.addEventListener('click', () => {
-    display.textContent = '6';
+    display.textContent = ''
+    display.textContent += '6';
 })
 let seven = document.getElementById('7');
 seven.addEventListener('click', () => {
-    display.textContent = '7';
+    display.textContent = ''
+    display.textContent += '7';
 })
 let eight = document.getElementById('8');
 eight.addEventListener('click', () => {
-    display.textContent = '8';
+    display.textContent = ''
+    display.textContent += '8';
 })
 let nine = document.getElementById('9');
 nine.addEventListener('click', () => {
-    display.textContent = '9';
+    display.textContent = ''
+    display.textContent += '9';
 })
 
 // applying operator function based on calc btn inputs
