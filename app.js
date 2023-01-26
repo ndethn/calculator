@@ -8,7 +8,10 @@ from the user
 return the sum of the values inputted by user
 */
 
-const add = function (value) {
+
+
+const add = function () {
+    let input = parseInt(prompt("Enter a value you would like to add?"))
     let sum = 0;
-    return sum += value;
+    return console.log(sum += input);
 }
