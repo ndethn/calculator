@@ -26,5 +26,7 @@ const divide = (a, b) => {
 // takes in an operator and two numbers and calls a math function
 
 const operate = (op, val1, val2) => {
-
+    if (op = 'add') {
+        return add(val1, val2);
+    }
 }
