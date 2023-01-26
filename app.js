@@ -35,6 +35,13 @@ const operate = (op, val1, val2) => {
     }
 }
 
+// event listeners for operators
+let addOp = document.getElementById('0');
+addOp.addEventListener('click', () => {
+    display.textContent = '0';
+})
+
+
 // onclick functions for display numbers
 let display = document.getElementById('display');
 
@@ -86,3 +93,4 @@ store the first number,
 also save which operation has been chosen,
 then operate() on them when user clicks on the equals button
 */
+
