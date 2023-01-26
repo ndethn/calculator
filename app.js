@@ -1,26 +1,30 @@
 // calculator project -- 1/25/23
 
 // declare basic math functions
-// add function
-/*
-add will be assigned to a new function with the parameter of values
-from the user
-return the sum of the values inputted by user
-*/
+let firstValue = parseInt(prompt('Enter first value: '));
+let secondValue = parseInt(prompt('Enter second value: '));
 
-const add = function (a, b) {
+console.log(firstValue + secondValue);
+
+const add = (a, b) => {
     return a + b;
 }
 
-const subtract = function (a, b) {
+const subtract = (a, b) => {
     return a - b;
 }
 
-const multiply = function (a, b) {
+const multiply = (a, b) => {
     return a * b;
 }
 
-const divide = function (a, b) {
+const divide = (a, b) => {
     return a / b;
 }
 
+// operate function
+// takes in an operator and two numbers and calls a math function
+
+const operate = (op, val1, val2) => {
+
+}
