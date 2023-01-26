@@ -37,3 +37,12 @@ const operate = (op, val1, val2) => {
         return 'error';
     }
 }
+
+// onclick functions for display
+let display = document.getElementById('display');
+
+
+let seven = document.getElementById('7');
+seven.addEventListener('click', () => {
+    display.textContent = '7';
+})
