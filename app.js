@@ -112,8 +112,8 @@ also save which operation has been chosen,
 then operate() on them when user clicks on the equals button
 */
 
-let clearBtn = document.getElementById('9');
-nine.addEventListener('click', () => {
-    display.textContent = ''
-    display.textContent += '9';
+let clearBtn = document.getElementById('clear');
+clearBtn.addEventListener('click', () => {
+    clearAll();
+    display.textContent = '';
 })
