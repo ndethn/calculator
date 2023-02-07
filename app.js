@@ -45,6 +45,10 @@ addOp.addEventListener('click', () => {
     console.log(values);
 })
 
+// clear function
+const clearAll = () => {
+    values = [];
+}
 
 // onclick functions for display numbers
 let display = document.getElementById('display');
@@ -108,3 +112,8 @@ also save which operation has been chosen,
 then operate() on them when user clicks on the equals button
 */
 
+let clearBtn = document.getElementById('9');
+nine.addEventListener('click', () => {
+    display.textContent = ''
+    display.textContent += '9';
+})
