@@ -117,3 +117,6 @@ clearBtn.addEventListener('click', () => {
     clearAll();
     display.textContent = '';
 })
+
+// once the equals sign is clicked, run the operate function 
+// under the specific arguments, op - val1 - val2
