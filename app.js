@@ -17,3 +17,8 @@ const multiply = (a, b) => {
 const divide = (a, b) => {
     return a / b;
 }
+
+// create operate function
+const operate = (operator, num1, num2) => {
+
+}
