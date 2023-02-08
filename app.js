@@ -35,3 +35,5 @@ const operate = (op, num1, num2) => {
 
 // display
  const display = document.getElementById('display');
+
+ const numbers = document.querySelectorAll('.operand');
