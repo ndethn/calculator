@@ -36,4 +36,14 @@ const operate = (op, num1, num2) => {
 // display
  const display = document.getElementById('display');
 
+
+ // get a node list of all number buttons
  const numbers = document.querySelectorAll('.operand');
+
+ // iterate through the node list
+ for (let num of numbers) {
+    console.log(num.value);
+ }
+// 7 8 9 4 5 6 1 2 3 0
+
+//
