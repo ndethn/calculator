@@ -32,3 +32,6 @@ const operate = (op, num1, num2) => {
         return console.log('error');
     }
 }
+
+// display
+ const display = document.getElementById('display');
