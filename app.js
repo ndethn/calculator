@@ -45,7 +45,8 @@ let inputArray = [];
 
 // get button element and display
 const seven = numbers[0].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '7' : display.textContent += '7';
+    display.textContent == '0' || display.textContent.includes('/') ? 
+    display.textContent = '7' : display.textContent += '7';
 })
 
 const eight = numbers[1].addEventListener('click', () => {
