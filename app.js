@@ -46,6 +46,9 @@ const operate = (op, num1, num2) => {
 //  }
 // 7 8 9 4 5 6 1 2 3 0
 
+// array of input values
+let inputArray = [];
+
 // get button element and display
 const seven = numbers[0].addEventListener('click', () => {
     display.textContent += '7';
