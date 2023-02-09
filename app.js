@@ -89,16 +89,16 @@ const operatorsList = document.querySelectorAll('.operator');
 // [/ * - +]
 
 const divideOp = operatorsList[0].addEventListener('click', () => {
-    display.textContent += '/';
+    inputArray.push(parseFloat(display.textContent));
 })
 const multiplyOp = operatorsList[1].addEventListener('click', () => {
-    display.textContent += '*';
+    inputArray.push(parseFloat(display.textContent));
 })
 const subtractOp = operatorsList[2].addEventListener('click', () => {
-    display.textContent += '-';
+    inputArray.push(parseFloat(display.textContent));
 })
 const addOp = operatorsList[3].addEventListener('click', () => {
-    display.textContent += '+';
+    inputArray.push(parseFloat(display.textContent));
 })
 
 // clear display
