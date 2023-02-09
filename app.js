@@ -36,10 +36,6 @@ const operate = (op, num1, num2) => {
 // display
  const display = document.getElementById('display');
 
-
- // get a node list of all number buttons
- const numbers = document.querySelectorAll('.operand');
-
 // iterate through the node list
 //  for (let num of numbers) {
 //     console.log(num.value);
@@ -48,6 +44,9 @@ const operate = (op, num1, num2) => {
 
 // array of input values
 let inputArray = [];
+
+ // get a node list of all number buttons
+ const numbers = document.querySelectorAll('.operand');
 
 // get button element and display
 const seven = numbers[0].addEventListener('click', () => {
@@ -89,3 +88,6 @@ const three = numbers[8].addEventListener('click', () => {
 const zero = numbers[9].addEventListener('click', () => {
     display.textContent += '0';
 })
+
+// get node list of operators and display
+
