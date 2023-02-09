@@ -36,17 +36,12 @@ const operate = (op, num1, num2) => {
 // display
  const display = document.getElementById('display');
 
-// iterate through the node list
-//  for (let num of numbers) {
-//     console.log(num.value);
-//  }
-// 7 8 9 4 5 6 1 2 3 0
-
 // array of input values
 let inputArray = [];
 
  // get a node list of all number buttons
  const numbers = document.querySelectorAll('.operand');
+ // [7 8 9 4 5 6 1 2 3 0]
 
 // get button element and display
 const seven = numbers[0].addEventListener('click', () => {
@@ -90,4 +85,18 @@ const zero = numbers[9].addEventListener('click', () => {
 })
 
 // get node list of operators and display
+const operatorsList = document.querySelectorAll('.operator');
+// [/ * - +]
 
+const divideOp = operatorsList[0].addEventListener('click', () => {
+    display.textContent += '/';
+})
+const multiplyOp = operatorsList[1].addEventListener('click', () => {
+    display.textContent += '*';
+})
+const subtractOp = operatorsList[2].addEventListener('click', () => {
+    display.textContent += '-';
+})
+const addOp = operatorsList[3].addEventListener('click', () => {
+    display.textContent += '+';
+})
