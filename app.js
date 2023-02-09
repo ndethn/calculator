@@ -40,14 +40,49 @@ const operate = (op, num1, num2) => {
  // get a node list of all number buttons
  const numbers = document.querySelectorAll('.operand');
 
- // iterate through the node list
- for (let num of numbers) {
-    console.log(num.value);
- }
+// iterate through the node list
+//  for (let num of numbers) {
+//     console.log(num.value);
+//  }
 // 7 8 9 4 5 6 1 2 3 0
 
 // get button element and display
-const seven = numbers[0];
-seven.addEventListener('click', () => {
+const seven = numbers[0].addEventListener('click', () => {
     display.textContent += '7';
+})
+
+const eight = numbers[1].addEventListener('click', () => {
+    display.textContent += '8';
+})
+
+const nine = numbers[2].addEventListener('click', () => {
+    display.textContent += '9';
+})
+
+const four = numbers[3].addEventListener('click', () => {
+    display.textContent += '4';
+})
+
+const five = numbers[4].addEventListener('click', () => {
+    display.textContent += '5';
+})
+
+const six = numbers[5].addEventListener('click', () => {
+    display.textContent += '6';
+})
+
+const one = numbers[6].addEventListener('click', () => {
+    display.textContent += '1';
+})
+
+const two = numbers[7].addEventListener('click', () => {
+    display.textContent += '2';
+})
+
+const three = numbers[8].addEventListener('click', () => {
+    display.textContent += '3';
+})
+
+const zero = numbers[9].addEventListener('click', () => {
+    display.textContent += '0';
 })
