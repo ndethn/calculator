@@ -45,3 +45,9 @@ const operate = (op, num1, num2) => {
     console.log(num.value);
  }
 // 7 8 9 4 5 6 1 2 3 0
+
+// get button element and display
+const seven = numbers[0];
+seven.addEventListener('click', () => {
+    display.textContent += '7';
+})
