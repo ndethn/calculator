@@ -100,3 +100,8 @@ const subtractOp = operatorsList[2].addEventListener('click', () => {
 const addOp = operatorsList[3].addEventListener('click', () => {
     display.textContent += '+';
 })
+
+// clear display
+const clearBtn = document.querySelector('.clear').addEventListener('click', () => {
+    display.textContent = '0';
+})
