@@ -119,3 +119,8 @@ const clearArray = document.querySelector('.clear').addEventListener('dblclick',
     inputArray = [];
     display.textContent = '0';
 })
+
+// equals function
+const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
+    display.textContent += '=';
+})
