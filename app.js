@@ -105,3 +105,9 @@ const addOp = operatorsList[3].addEventListener('click', () => {
 const clearBtn = document.querySelector('.clear').addEventListener('click', () => {
     display.textContent = '0';
 })
+
+// clear array
+const clearArray = document.querySelector('.clear').addEventListener('dblclick', () => {
+    inputArray = [];
+    display.textContent = '0';
+})
