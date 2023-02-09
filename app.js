@@ -120,7 +120,11 @@ const clearArray = document.querySelector('.clear').addEventListener('dblclick',
     display.textContent = '0';
 })
 
+// get sol display
+const solDisplay = document.querySelector('#sol-display');
+
 // equals function
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
+    inputArray.push(/* */);
     display.textContent += '=';
 })
