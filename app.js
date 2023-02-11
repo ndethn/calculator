@@ -94,25 +94,31 @@ divideOp.addEventListener('click', () => {
     display.textContent += '/';
     inputArray.push('divide');
     inputArray.push(parseFloat(display.textContent));
-    divideOp.style.backgroundColor = 'grey';
+    divideOp.style.backgroundColor = 'lightgrey';
 })
 
-const multiplyOp = operatorsList[1].addEventListener('click', () => {
+const multiplyOp = operatorsList[1];
+multiplyOp.addEventListener('click', () => {
     display.textContent += '*';
     inputArray.push('multiply');
     inputArray.push(parseFloat(display.textContent));
+    multiplyOp.style.backgroundColor = 'lightgrey';
 })
 
-const subtractOp = operatorsList[2].addEventListener('click', () => {
+const subtractOp = operatorsList[2];
+subtractOp.addEventListener('click', () => {
     display.textContent += '-';
     inputArray.push('subtract');
     inputArray.push(parseFloat(display.textContent));
+    subtractOp.style.backgroundColor = 'lightgrey';
 })
 
-const addOp = operatorsList[3].addEventListener('click', () => {
+const addOp = operatorsList[3];
+addOp.addEventListener('click', () => {
     display.textContent += '+';
     inputArray.push('add');
     inputArray.push(parseFloat(display.textContent));
+    addOp.style.backgroundColor = 'lightgrey';
 })
 
 // clear display
