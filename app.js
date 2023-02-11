@@ -130,6 +130,10 @@ const clearBtn = document.querySelector('.clear').addEventListener('click', () =
 const clearArray = document.querySelector('.clear').addEventListener('dblclick', () => {
     inputArray = [];
     display.textContent = '0';
+    divideOp.style.backgroundColor = '';
+    multiplyOp.style.backgroundColor = '';
+    subtractOp.style.backgroundColor = '';
+    addOp.style.backgroundColor = '';
 })
 
 // get sol display
