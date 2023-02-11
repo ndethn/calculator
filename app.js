@@ -45,48 +45,163 @@ const numbers = document.querySelectorAll('.operand');
 
 // get button element and display
 const seven = numbers[0].addEventListener('click', () => {
-    if (display.textContent == '0' || divideOp.style.backgroundColor != '') {
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
         display.textContent = '7'
         divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
     } else {
         display.textContent += '7';
     }
 })
 
 const eight = numbers[1].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '8' : display.textContent += '8';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '8'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+        } else {
+        display.textContent += '8';
+    }
 })
 
 const nine = numbers[2].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '9' : display.textContent += '9';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '9'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '9';
+    }
 })
 
 const four = numbers[3].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '4' : display.textContent += '4';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '4'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '4';
+    }
 })
 
 const five = numbers[4].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '5' : display.textContent += '5';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '5'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '5';
+    }
 })
 
 const six = numbers[5].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '6' : display.textContent += '6';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '6'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '6';
+    }
 })
 
 const one = numbers[6].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '1' : display.textContent += '1';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '1'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '1';
+    }
 })
 
 const two = numbers[7].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '2' : display.textContent += '2';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '2'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '2';
+    }
 })
 
 const three = numbers[8].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '3' : display.textContent += '3';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '3'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '3';
+    }
 })
 
 const zero = numbers[9].addEventListener('click', () => {
-    display.textContent == '0' ? display.textContent = '0' : display.textContent += '0';
+    if (display.textContent == '0' ||
+    divideOp.style.backgroundColor != '' ||
+    multiplyOp.style.backgroundColor != '' ||
+    subtractOp.style.backgroundColor != '' ||
+    addOp.style.backgroundColor != '') {
+        display.textContent = '0'
+        divideOp.style.backgroundColor = '';
+        multiplyOp.style.backgroundColor = '';
+        subtractOp.style.backgroundColor = '';
+        addOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '0';
+    }
 })
 
 // get node list of operators and display
@@ -146,7 +261,7 @@ const solDisplay = document.querySelector('#sol-display');
 // equals function
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
     inputArray.push(/* */);
-    display.textContent += '=';
+    // display.textContent += '=';
 })
 
 // function to check if button was clicked?
