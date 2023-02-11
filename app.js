@@ -246,12 +246,6 @@ addOp.addEventListener('click', () => {
 
 // clear display
 const clearBtn = document.querySelector('.clear').addEventListener('click', () => {
-    display.textContent = '0';
-    solDisplay.textContent = '';
-})
-
-// clear array
-const clearArray = document.querySelector('.clear').addEventListener('dblclick', () => {
     inputArray = [];
     display.textContent = '0';
     solDisplay.textContent = '';
@@ -260,6 +254,17 @@ const clearArray = document.querySelector('.clear').addEventListener('dblclick',
     subtractOp.style.backgroundColor = '';
     addOp.style.backgroundColor = '';
 })
+
+// clear array
+// const clearArray = document.querySelector('.clear').addEventListener('dblclick', () => {
+//     inputArray = [];
+//     display.textContent = '0';
+//     solDisplay.textContent = '';
+//     divideOp.style.backgroundColor = '';
+//     multiplyOp.style.backgroundColor = '';
+//     subtractOp.style.backgroundColor = '';
+//     addOp.style.backgroundColor = '';
+// })
 
 // get sol display
 const solDisplay = document.querySelector('#sol-display');
