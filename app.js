@@ -45,8 +45,12 @@ const numbers = document.querySelectorAll('.operand');
 
 // get button element and display
 const seven = numbers[0].addEventListener('click', () => {
-    display.textContent == '0' || display.textContent.includes('/') ?
-        display.textContent = '7' : display.textContent += '7';
+    if (display.textContent == '0' || divideOp.style.backgroundColor != '') {
+        display.textContent = '7'
+        divideOp.style.backgroundColor = '';
+    } else {
+        display.textContent += '7';
+    }
 })
 
 const eight = numbers[1].addEventListener('click', () => {
@@ -91,7 +95,7 @@ const operatorsList = document.querySelectorAll('.operator');
 
 const divideOp = operatorsList[0];
 divideOp.addEventListener('click', () => {
-    display.textContent += '/';
+    // display.textContent += '/';
     inputArray.push('divide');
     inputArray.push(parseFloat(display.textContent));
     divideOp.style.backgroundColor = 'lightgrey';
@@ -99,7 +103,7 @@ divideOp.addEventListener('click', () => {
 
 const multiplyOp = operatorsList[1];
 multiplyOp.addEventListener('click', () => {
-    display.textContent += '*';
+    // display.textContent += '*';
     inputArray.push('multiply');
     inputArray.push(parseFloat(display.textContent));
     multiplyOp.style.backgroundColor = 'lightgrey';
@@ -107,7 +111,7 @@ multiplyOp.addEventListener('click', () => {
 
 const subtractOp = operatorsList[2];
 subtractOp.addEventListener('click', () => {
-    display.textContent += '-';
+    // display.textContent += '-';
     inputArray.push('subtract');
     inputArray.push(parseFloat(display.textContent));
     subtractOp.style.backgroundColor = 'lightgrey';
@@ -115,7 +119,7 @@ subtractOp.addEventListener('click', () => {
 
 const addOp = operatorsList[3];
 addOp.addEventListener('click', () => {
-    display.textContent += '+';
+    // display.textContent += '+';
     inputArray.push('add');
     inputArray.push(parseFloat(display.textContent));
     addOp.style.backgroundColor = 'lightgrey';
