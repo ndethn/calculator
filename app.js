@@ -142,8 +142,8 @@ const equalsBtn = document.querySelector('.equals').addEventListener('click', ()
 })
 
 // function to check if button was clicked?
-const checkForOp = (opBtn) => {
-    if (opBtn) {
-
-    }
-};
+// const checkForOp = (opBtn) => {
+//     if (opBtn.style.backgroundColor === 'lightgrey') {
+//         clearBtn();
+//     }
+// };
