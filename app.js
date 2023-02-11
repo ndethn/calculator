@@ -19,7 +19,11 @@ const divide = (a, b) => {
 }
 
 // create operate function
-const operate = (op, num1, num2) => {
+// op num1 num2
+const operate = (input) => {
+    op = input[0];
+    num1 = input[1];
+    num2 = input[2];
     if (op === 'add') {
         return add(num1, num2);
     } else if (op === 'subtract') {
@@ -249,6 +253,7 @@ const clearBtn = document.querySelector('.clear').addEventListener('click', () =
 const clearArray = document.querySelector('.clear').addEventListener('dblclick', () => {
     inputArray = [];
     display.textContent = '0';
+    solDisplay.textContent = '0';
     divideOp.style.backgroundColor = '';
     multiplyOp.style.backgroundColor = '';
     subtractOp.style.backgroundColor = '';
@@ -261,9 +266,10 @@ const solDisplay = document.querySelector('#sol-display');
 // equals function
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
     inputArray.push(parseFloat(display.textContent));
-    solDisplay.textContent = 'solution';
+    display.textContent = '';
+    solDisplay.textContent = operate(inputArray);
     // display.textContent += '=';
-    operate(inputArray);
+
 })
 
 // function to check if button was clicked?
