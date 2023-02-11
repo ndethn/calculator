@@ -247,13 +247,14 @@ addOp.addEventListener('click', () => {
 // clear display
 const clearBtn = document.querySelector('.clear').addEventListener('click', () => {
     display.textContent = '0';
+    solDisplay.textContent = '';
 })
 
 // clear array
 const clearArray = document.querySelector('.clear').addEventListener('dblclick', () => {
     inputArray = [];
     display.textContent = '0';
-    solDisplay.textContent = '0';
+    solDisplay.textContent = '';
     divideOp.style.backgroundColor = '';
     multiplyOp.style.backgroundColor = '';
     subtractOp.style.backgroundColor = '';
