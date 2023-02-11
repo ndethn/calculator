@@ -260,8 +260,10 @@ const solDisplay = document.querySelector('#sol-display');
 
 // equals function
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
-    inputArray.push(/* */);
+    inputArray.push(parseFloat(display.textContent));
+    solDisplay.textContent = 'solution';
     // display.textContent += '=';
+    operate(inputArray);
 })
 
 // function to check if button was clicked?
