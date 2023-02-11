@@ -34,19 +34,19 @@ const operate = (op, num1, num2) => {
 }
 
 // display
- const display = document.getElementById('display');
+const display = document.getElementById('display');
 
 // array of input values
 let inputArray = [];
 
- // get a node list of all number buttons
- const numbers = document.querySelectorAll('.operand');
- // [7 8 9 4 5 6 1 2 3 0]
+// get a node list of all number buttons
+const numbers = document.querySelectorAll('.operand');
+// [7 8 9 4 5 6 1 2 3 0]
 
 // get button element and display
 const seven = numbers[0].addEventListener('click', () => {
-    display.textContent == '0' || display.textContent.includes('/') ? 
-    display.textContent = '7' : display.textContent += '7';
+    display.textContent == '0' || display.textContent.includes('/') ?
+        display.textContent = '7' : display.textContent += '7';
 })
 
 const eight = numbers[1].addEventListener('click', () => {
@@ -89,21 +89,26 @@ const zero = numbers[9].addEventListener('click', () => {
 const operatorsList = document.querySelectorAll('.operator');
 // [/ * - +]
 
-const divideOp = operatorsList[0].addEventListener('click', () => {
+const divideOp = operatorsList[0];
+divideOp.addEventListener('click', () => {
     display.textContent += '/';
     inputArray.push('divide');
     inputArray.push(parseFloat(display.textContent));
+    divideOp.style.backgroundColor = 'grey';
 })
+
 const multiplyOp = operatorsList[1].addEventListener('click', () => {
     display.textContent += '*';
     inputArray.push('multiply');
     inputArray.push(parseFloat(display.textContent));
 })
+
 const subtractOp = operatorsList[2].addEventListener('click', () => {
     display.textContent += '-';
     inputArray.push('subtract');
     inputArray.push(parseFloat(display.textContent));
 })
+
 const addOp = operatorsList[3].addEventListener('click', () => {
     display.textContent += '+';
     inputArray.push('add');
@@ -129,3 +134,10 @@ const equalsBtn = document.querySelector('.equals').addEventListener('click', ()
     inputArray.push(/* */);
     display.textContent += '=';
 })
+
+// function to check if button was clicked?
+const checkForOp = (opBtn) => {
+    if (opBtn) {
+
+    }
+};
