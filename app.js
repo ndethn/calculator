@@ -3,19 +3,23 @@
 // create basic math functions
 
 const add = (a, b) => {
-    return a + b;
+    sol = a + b;
+    return sol.toFixed(2);
 }
 
 const subtract = (a, b) => {
-    return a - b;
+    sol = a - b
+    return sol.toFixed(2);
 }
 
 const multiply = (a, b) => {
-    return a * b;
+    sol = a * b
+    return sol.toFixed(2);
 }
 
 const divide = (a, b) => {
-    return a / b;
+    sol = a / b;
+    return sol.toFixed(2);
 }
 
 // create operate function
@@ -248,7 +252,7 @@ addOp.addEventListener('click', () => {
 const clearBtn = document.querySelector('.clear').addEventListener('click', () => {
     inputArray = [];
     display.textContent = '0';
-    solDisplay.textContent = '';
+    // solDisplay.textContent = '';
     divideOp.style.backgroundColor = '';
     multiplyOp.style.backgroundColor = '';
     subtractOp.style.backgroundColor = '';
@@ -271,9 +275,9 @@ const solDisplay = document.querySelector('#sol-display');
 
 // equals function
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
-    inputArray.push(parseFloat(display.textContent));
+    inputArray.push(parseFloat(display.textContent).toFixed(2));
     display.textContent = '';
-    solDisplay.textContent = operate(inputArray);
+    display.textContent = operate(inputArray);
     // display.textContent += '=';
 
 })
