@@ -4,22 +4,22 @@
 
 const add = (a, b) => {
     sol = a + b;
-    return sol.toFixed(2);
+    return sol.toFixed(0);
 }
 
 const subtract = (a, b) => {
     sol = a - b
-    return sol.toFixed(2);
+    return sol.toFixed(0);
 }
 
 const multiply = (a, b) => {
     sol = a * b
-    return sol.toFixed(2);
+    return sol.toFixed(0);
 }
 
 const divide = (a, b) => {
     sol = a / b;
-    return sol.toFixed(2);
+    return sol.toFixed(0);
 }
 
 // create operate function
