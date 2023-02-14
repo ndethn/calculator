@@ -229,6 +229,12 @@ multiplyOp.addEventListener('click', () => {
     // display.textContent += '*';
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('multiply');
+
+    // check for second op
+    // if (typeof (inputArray[inputArray.length - 1]) === 'string') {
+    //     operate(inputArray);
+    //     inputArray.splice(0,2)
+    // }
     multiplyOp.style.backgroundColor = 'lightgrey';
 })
 
