@@ -228,8 +228,10 @@ divideOp.addEventListener('click', () => {
 const multiplyOp = operatorsList[1];
 multiplyOp.addEventListener('click', () => {
     // display.textContent += '*';
-    // inputArray.push(parseFloat(display.textContent));
-    // inputArray.push('multiply');
+    inputArray.push(parseFloat(display.textContent));
+    inputArray.push('multiply');
+
+    slicedArray = inputArray.slice(0, 3);
 
     // check for second op
     // if (typeof (inputArray[inputArray.length - 1]) === 'string') {
@@ -237,14 +239,14 @@ multiplyOp.addEventListener('click', () => {
     //     inputArray.splice(0,2)
     // }
 
-    if (typeof (inputArray[inputArray.length]) !== 'string') {
-        inputArray.push(parseFloat(display.textContent));
-        inputArray.push('multiply');
-    } else if (typeof (inputArray[inputArray.length]) === 'string') {
-        slicedArray = inputArray.slice(0, 3);
-        inputArray.unshift(parseFloat(operate(slicedArray)));
-    }
-    inputArray.push(operate(inputArray));
+    // if (typeof (inputArray[inputArray.length]) !== 'string') {
+    //     inputArray.push(parseFloat(display.textContent));
+    //     inputArray.push('multiply');
+    // } else if (typeof (inputArray[inputArray.length]) === 'string') {
+    //     slicedArray = inputArray.slice(0, 3);
+    //     inputArray.unshift(parseFloat(operate(slicedArray)));
+    // }
+    // inputArray.push(operate(inputArray));
 
     multiplyOp.style.backgroundColor = 'lightgrey';
 })
