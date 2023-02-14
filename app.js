@@ -240,26 +240,6 @@ multiplyOp.addEventListener('click', () => {
         inputArray.splice(0,4);
     }
 
-    // if (inputArray[inputArray.length] != '') {
-    //     // inputArray.push(parseFloat(display.textContent));
-    //     slicedArray = inputArray.slice(0, 2);
-    // }
-
-    // check for second op
-    // if (typeof (inputArray[inputArray.length - 1]) === 'string') {
-    //     operate(inputArray);
-    //     inputArray.splice(0,2)
-    // }
-
-    // if (typeof (inputArray[inputArray.length]) !== 'string') {
-    //     inputArray.push(parseFloat(display.textContent));
-    //     inputArray.push('multiply');
-    // } else if (typeof (inputArray[inputArray.length]) === 'string') {
-    //     slicedArray = inputArray.slice(0, 3);
-    //     inputArray.unshift(parseFloat(operate(slicedArray)));
-    // }
-    // inputArray.push(operate(inputArray));
-
     multiplyOp.style.backgroundColor = 'lightgrey';
 })
 
