@@ -4,22 +4,22 @@
 
 const add = (a, b) => {
     sol = a + b;
-    return sol.toFixed(0);
+    return sol;
 }
 
 const subtract = (a, b) => {
     sol = a - b
-    return sol.toFixed(0);
+    return sol;
 }
 
 const multiply = (a, b) => {
     sol = a * b
-    return sol.toFixed(0);
+    return sol;
 }
 
 const divide = (a, b) => {
     sol = a / b;
-    return sol.toFixed(0);
+    return sol;
 }
 
 // create operate function
@@ -37,7 +37,7 @@ const operate = (input) => {
     } else if (op === 'divide') {
         return divide(num1, num2);
     } else {
-        console.log('error');
+        console.log('LOL error');
         return display.textContent = 'LOL'
     }
 }
