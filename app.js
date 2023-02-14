@@ -37,7 +37,8 @@ const operate = (input) => {
     } else if (op === 'divide') {
         return divide(num1, num2);
     } else {
-        return console.log('error');
+        console.log('error');
+        return display.textContent = 'LOL'
     }
 }
 
