@@ -237,6 +237,9 @@ multiplyOp.addEventListener('click', () => {
     //     inputArray.splice(0,2)
     // }
 
+    if (inputArray.length === 4) {
+        slicedArray = inputArray.slice(0,3);
+    }
 
     multiplyOp.style.backgroundColor = 'lightgrey';
 })
