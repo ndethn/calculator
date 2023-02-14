@@ -229,12 +229,17 @@ divideOp.addEventListener('click', () => {
 const multiplyOp = operatorsList[1];
 multiplyOp.addEventListener('click', () => {
     // display.textContent += '*';
-    inputArray.push(parseFloat(display.textContent));
-    inputArray.push('multiply');
 
+    if (inputArray.length <= 3) {
+        inputArray.push(parseFloat(display.textContent));
+        inputArray.push('multiply');
+    }
 
-    if (inputArray[inputArray.length] = 4) {
-        slicedArray = inputArray.slice(0, 3);
+    if (inputArray[inputArray.length] != '') {
+        // inputArray.push(parseFloat(display.textContent));
+        slicedArray = inputArray.slice(0, 2);
+    } else {
+
     }
 
     // check for second op
@@ -302,7 +307,7 @@ const equalsBtn = document.querySelector('.equals').addEventListener('click', ()
     inputArray.push(parseFloat(display.textContent));
     inputArray.push(operate(inputArray));
     display.textContent = '';
-    display.textContent = operate(inputArray);
+    display.textContent = inputArray[inputArray.length - 1];
     // display.textContent += '=';
 
 })
