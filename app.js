@@ -223,6 +223,15 @@ divideOp.addEventListener('click', () => {
     // display.textContent += '/';
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('divide');
+
+    if (inputArray.length === 4) {
+        slicedArray = inputArray.slice(0, 3);
+        display.textContent = operate(slicedArray);
+        inputArray.push(parseFloat(display.textContent));
+        inputArray.push('divide');
+        inputArray.splice(0,4);
+    }
+
     divideOp.style.backgroundColor = 'lightgrey';
 })
 
@@ -248,6 +257,15 @@ subtractOp.addEventListener('click', () => {
     // display.textContent += '-';
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('subtract');
+
+    if (inputArray.length === 4) {
+        slicedArray = inputArray.slice(0, 3);
+        display.textContent = operate(slicedArray);
+        inputArray.push(parseFloat(display.textContent));
+        inputArray.push('subtract');
+        inputArray.splice(0,4);
+    }
+
     subtractOp.style.backgroundColor = 'lightgrey';
 })
 
@@ -256,6 +274,15 @@ addOp.addEventListener('click', () => {
     // display.textContent += '+';
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('add');
+
+    if (inputArray.length === 4) {
+        slicedArray = inputArray.slice(0, 3);
+        display.textContent = operate(slicedArray);
+        inputArray.push(parseFloat(display.textContent));
+        inputArray.push('add');
+        inputArray.splice(0,4);
+    }
+
     addOp.style.backgroundColor = 'lightgrey';
 })
 
