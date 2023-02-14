@@ -55,10 +55,10 @@ const numbers = document.querySelectorAll('.operand');
 // get button element and display
 const seven = numbers[0].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '7'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -71,26 +71,26 @@ const seven = numbers[0].addEventListener('click', () => {
 
 const eight = numbers[1].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '8'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
         subtractOp.style.backgroundColor = '';
         addOp.style.backgroundColor = '';
-        } else {
+    } else {
         display.textContent += '8';
     }
 })
 
 const nine = numbers[2].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '9'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -103,10 +103,10 @@ const nine = numbers[2].addEventListener('click', () => {
 
 const four = numbers[3].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '4'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -119,10 +119,10 @@ const four = numbers[3].addEventListener('click', () => {
 
 const five = numbers[4].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '5'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -135,10 +135,10 @@ const five = numbers[4].addEventListener('click', () => {
 
 const six = numbers[5].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '6'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -151,10 +151,10 @@ const six = numbers[5].addEventListener('click', () => {
 
 const one = numbers[6].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '1'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -167,10 +167,10 @@ const one = numbers[6].addEventListener('click', () => {
 
 const two = numbers[7].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '2'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -183,10 +183,10 @@ const two = numbers[7].addEventListener('click', () => {
 
 const three = numbers[8].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '3'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -199,10 +199,10 @@ const three = numbers[8].addEventListener('click', () => {
 
 const zero = numbers[9].addEventListener('click', () => {
     if (display.textContent == '0' ||
-    divideOp.style.backgroundColor != '' ||
-    multiplyOp.style.backgroundColor != '' ||
-    subtractOp.style.backgroundColor != '' ||
-    addOp.style.backgroundColor != '') {
+        divideOp.style.backgroundColor != '' ||
+        multiplyOp.style.backgroundColor != '' ||
+        subtractOp.style.backgroundColor != '' ||
+        addOp.style.backgroundColor != '') {
         display.textContent = '0'
         divideOp.style.backgroundColor = '';
         multiplyOp.style.backgroundColor = '';
@@ -228,8 +228,8 @@ divideOp.addEventListener('click', () => {
 const multiplyOp = operatorsList[1];
 multiplyOp.addEventListener('click', () => {
     // display.textContent += '*';
-    inputArray.push(parseFloat(display.textContent));
-    inputArray.push('multiply');
+    // inputArray.push(parseFloat(display.textContent));
+    // inputArray.push('multiply');
 
     // check for second op
     // if (typeof (inputArray[inputArray.length - 1]) === 'string') {
@@ -237,9 +237,14 @@ multiplyOp.addEventListener('click', () => {
     //     inputArray.splice(0,2)
     // }
 
-    if (inputArray.length === 4) {
-        slicedArray = inputArray.slice(0,3);
+    if (typeof (inputArray[inputArray.length]) !== 'string') {
+        inputArray.push(parseFloat(display.textContent));
+        inputArray.push('multiply');
+    } else if (typeof (inputArray[inputArray.length]) === 'string') {
+        slicedArray = inputArray.slice(0, 3);
+        inputArray.unshift(parseFloat(operate(slicedArray)));
     }
+    inputArray.push(operate(inputArray));
 
     multiplyOp.style.backgroundColor = 'lightgrey';
 })
@@ -263,6 +268,7 @@ addOp.addEventListener('click', () => {
 // clear display
 const clearBtn = document.querySelector('.clear').addEventListener('click', () => {
     inputArray = [];
+    slicedArray = [];
     display.textContent = '0';
     // solDisplay.textContent = '';
     divideOp.style.backgroundColor = '';
