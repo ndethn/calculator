@@ -276,6 +276,7 @@ const solDisplay = document.querySelector('#sol-display');
 // equals function
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
     inputArray.push(parseFloat(display.textContent));
+    inputArray.push(operate(inputArray));
     display.textContent = '';
     display.textContent = operate(inputArray);
     // display.textContent += '=';
