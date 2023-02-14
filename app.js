@@ -25,8 +25,8 @@ const divide = (a, b) => {
 // create operate function
 // op num1 num2
 const operate = (input) => {
-    op = input[0];
-    num1 = input[1];
+    num1 = input[0];
+    op = input[1];
     num2 = input[2];
     if (op === 'add') {
         return add(num1, num2);
@@ -219,32 +219,32 @@ const operatorsList = document.querySelectorAll('.operator');
 const divideOp = operatorsList[0];
 divideOp.addEventListener('click', () => {
     // display.textContent += '/';
-    inputArray.push('divide');
     inputArray.push(parseFloat(display.textContent));
+    inputArray.push('divide');
     divideOp.style.backgroundColor = 'lightgrey';
 })
 
 const multiplyOp = operatorsList[1];
 multiplyOp.addEventListener('click', () => {
     // display.textContent += '*';
-    inputArray.push('multiply');
     inputArray.push(parseFloat(display.textContent));
+    inputArray.push('multiply');
     multiplyOp.style.backgroundColor = 'lightgrey';
 })
 
 const subtractOp = operatorsList[2];
 subtractOp.addEventListener('click', () => {
     // display.textContent += '-';
-    inputArray.push('subtract');
     inputArray.push(parseFloat(display.textContent));
+    inputArray.push('subtract');
     subtractOp.style.backgroundColor = 'lightgrey';
 })
 
 const addOp = operatorsList[3];
 addOp.addEventListener('click', () => {
     // display.textContent += '+';
-    inputArray.push('add');
     inputArray.push(parseFloat(display.textContent));
+    inputArray.push('add');
     addOp.style.backgroundColor = 'lightgrey';
 })
 
