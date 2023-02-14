@@ -46,6 +46,7 @@ const display = document.getElementById('display');
 
 // array of input values
 let inputArray = [];
+let slicedArray = [];
 
 // get a node list of all number buttons
 const numbers = document.querySelectorAll('.operand');
@@ -235,6 +236,8 @@ multiplyOp.addEventListener('click', () => {
     //     operate(inputArray);
     //     inputArray.splice(0,2)
     // }
+
+
     multiplyOp.style.backgroundColor = 'lightgrey';
 })
 
