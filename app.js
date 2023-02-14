@@ -231,7 +231,10 @@ multiplyOp.addEventListener('click', () => {
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('multiply');
 
-    slicedArray = inputArray.slice(0, 3);
+
+    if (inputArray[inputArray.length] = 4) {
+        slicedArray = inputArray.slice(0, 3);
+    }
 
     // check for second op
     // if (typeof (inputArray[inputArray.length - 1]) === 'string') {
