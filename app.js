@@ -58,7 +58,8 @@ const numbers = document.querySelectorAll('.operand');
 // [7 8 9 4 5 6 1 2 3 0]
 
 // get button element and display
-const seven = numbers[0].addEventListener('click', () => {
+const seven = numbers[0];
+seven.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -74,7 +75,15 @@ const seven = numbers[0].addEventListener('click', () => {
     }
 })
 
-const eight = numbers[1].addEventListener('click', () => {
+seven.addEventListener('mousedown', () => {
+    seven.style.backgroundColor = 'grey';
+});
+seven.addEventListener('mouseup', () => {
+    seven.style.backgroundColor = '';
+});
+
+const eight = numbers[1];
+eight.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -90,7 +99,15 @@ const eight = numbers[1].addEventListener('click', () => {
     }
 })
 
-const nine = numbers[2].addEventListener('click', () => {
+eight.addEventListener('mousedown', () => {
+    eight.style.backgroundColor = 'grey';
+});
+eight.addEventListener('mouseup', () => {
+    eight.style.backgroundColor = '';
+});
+
+const nine = numbers[2];
+nine.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -106,7 +123,15 @@ const nine = numbers[2].addEventListener('click', () => {
     }
 })
 
-const four = numbers[3].addEventListener('click', () => {
+nine.addEventListener('mousedown', () => {
+    nine.style.backgroundColor = 'grey';
+});
+nine.addEventListener('mouseup', () => {
+    nine.style.backgroundColor = '';
+});
+
+const four = numbers[3];
+four.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -122,7 +147,15 @@ const four = numbers[3].addEventListener('click', () => {
     }
 })
 
-const five = numbers[4].addEventListener('click', () => {
+four.addEventListener('mousedown', () => {
+    four.style.backgroundColor = 'grey';
+});
+four.addEventListener('mouseup', () => {
+    four.style.backgroundColor = '';
+});
+
+const five = numbers[4];
+five.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -138,7 +171,12 @@ const five = numbers[4].addEventListener('click', () => {
     }
 })
 
-
+five.addEventListener('mousedown', () => {
+    five.style.backgroundColor = 'grey';
+});
+five.addEventListener('mouseup', () => {
+    five.style.backgroundColor = '';
+});
 
 const six = numbers[5];
 six.addEventListener('click', () => {
@@ -164,7 +202,8 @@ six.addEventListener('mouseup', () => {
     six.style.backgroundColor = '';
 });
 
-const one = numbers[6].addEventListener('click', () => {
+const one = numbers[6];
+one.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -180,7 +219,15 @@ const one = numbers[6].addEventListener('click', () => {
     }
 })
 
-const two = numbers[7].addEventListener('click', () => {
+one.addEventListener('mousedown', () => {
+    one.style.backgroundColor = 'grey';
+});
+one.addEventListener('mouseup', () => {
+    one.style.backgroundColor = '';
+});
+
+const two = numbers[7];
+two.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -196,7 +243,15 @@ const two = numbers[7].addEventListener('click', () => {
     }
 })
 
-const three = numbers[8].addEventListener('click', () => {
+two.addEventListener('mousedown', () => {
+    two.style.backgroundColor = 'grey';
+});
+two.addEventListener('mouseup', () => {
+    two.style.backgroundColor = '';
+});
+
+const three = numbers[8];
+three.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -212,7 +267,15 @@ const three = numbers[8].addEventListener('click', () => {
     }
 })
 
-const zero = numbers[9].addEventListener('click', () => {
+three.addEventListener('mousedown', () => {
+    three.style.backgroundColor = 'grey';
+});
+three.addEventListener('mouseup', () => {
+    three.style.backgroundColor = '';
+});
+
+const zero = numbers[9];
+zero.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -227,6 +290,13 @@ const zero = numbers[9].addEventListener('click', () => {
         display.textContent += '0';
     }
 })
+
+zero.addEventListener('mousedown', () => {
+    zero.style.backgroundColor = 'grey';
+});
+zero.addEventListener('mouseup', () => {
+    zero.style.backgroundColor = '';
+});
 
 // get node list of operators and display
 const operatorsList = document.querySelectorAll('.operator');
@@ -297,7 +367,8 @@ addOp.addEventListener('click', () => {
 })
 
 // clear display
-const clearBtn = document.querySelector('.clear').addEventListener('click', () => {
+const clearBtn = document.querySelector('.clear');
+clearBtn.addEventListener('click', () => {
     inputArray = [];
     slicedArray = [];
     display.textContent = '0';
@@ -307,8 +378,16 @@ const clearBtn = document.querySelector('.clear').addEventListener('click', () =
     addOp.style.backgroundColor = '';
 })
 
+clearBtn.addEventListener('mousedown', () => {
+    clearBtn.style.backgroundColor = 'grey';
+});
+clearBtn.addEventListener('mouseup', () => {
+    clearBtn.style.backgroundColor = '';
+});
+
 // equals function
-const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
+const equalsBtn = document.querySelector('.equals');
+equalsBtn.addEventListener('click', () => {
     inputArray.push(parseFloat(display.textContent));
 
     // check for division of zero
@@ -322,3 +401,9 @@ const equalsBtn = document.querySelector('.equals').addEventListener('click', ()
     display.textContent = inputArray[inputArray.length - 1];
 })
 
+equalsBtn.addEventListener('mousedown', () => {
+    equalsBtn.style.backgroundColor = 'grey';
+});
+equalsBtn.addEventListener('mouseup', () => {
+    equalsBtn.style.backgroundColor = '';
+});
