@@ -1,7 +1,6 @@
 // calculator project 02/07
 
 // create basic math functions
-
 const add = (a, b) => {
     sol = a + b;
     return sol;
@@ -225,7 +224,6 @@ const operatorsList = document.querySelectorAll('.operator');
 
 const divideOp = operatorsList[0];
 divideOp.addEventListener('click', () => {
-    // display.textContent += '/';
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('divide');
 
@@ -242,7 +240,6 @@ divideOp.addEventListener('click', () => {
 
 const multiplyOp = operatorsList[1];
 multiplyOp.addEventListener('click', () => {
-    // display.textContent += '*';
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('multiply');
 
@@ -259,7 +256,6 @@ multiplyOp.addEventListener('click', () => {
 
 const subtractOp = operatorsList[2];
 subtractOp.addEventListener('click', () => {
-    // display.textContent += '-';
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('subtract');
 
@@ -276,7 +272,6 @@ subtractOp.addEventListener('click', () => {
 
 const addOp = operatorsList[3];
 addOp.addEventListener('click', () => {
-    // display.textContent += '+';
     inputArray.push(parseFloat(display.textContent));
     inputArray.push('add');
 
@@ -296,7 +291,6 @@ const clearBtn = document.querySelector('.clear').addEventListener('click', () =
     inputArray = [];
     slicedArray = [];
     display.textContent = '0';
-    // solDisplay.textContent = '';
     divideOp.style.backgroundColor = '';
     multiplyOp.style.backgroundColor = '';
     subtractOp.style.backgroundColor = '';
@@ -307,6 +301,7 @@ const clearBtn = document.querySelector('.clear').addEventListener('click', () =
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
     inputArray.push(parseFloat(display.textContent));
 
+    // check for division of zero
     if (inputArray[2] === 0) {
         display.textContent = 'LOL';
         return;
