@@ -138,7 +138,10 @@ const five = numbers[4].addEventListener('click', () => {
     }
 })
 
-const six = numbers[5].addEventListener('click', () => {
+
+
+const six = numbers[5];
+six.addEventListener('click', () => {
     if (display.textContent == '0' ||
         divideOp.style.backgroundColor != '' ||
         multiplyOp.style.backgroundColor != '' ||
@@ -153,6 +156,13 @@ const six = numbers[5].addEventListener('click', () => {
         display.textContent += '6';
     }
 })
+
+six.addEventListener('mousedown', () => {
+    six.style.backgroundColor = 'grey';
+});
+six.addEventListener('mouseup', () => {
+    six.style.backgroundColor = '';
+});
 
 const one = numbers[6].addEventListener('click', () => {
     if (display.textContent == '0' ||

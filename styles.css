@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    border: solid 2px rgb(0, 0, 0);
+    padding: 1em;
+    background-color: lightblue;
+}
+
+#display {
+    background-color: lightgrey;
+    padding: 1em;
+    border: solid 1px black;
+    text-align: end;
+}
+
+button {
+    padding: 1em;
+    background-color: antiquewhite;
+    border: solid 1px black;
+    margin: 1px;
+}
