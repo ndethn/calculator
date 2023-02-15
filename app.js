@@ -298,33 +298,11 @@ const clearBtn = document.querySelector('.clear').addEventListener('click', () =
     addOp.style.backgroundColor = '';
 })
 
-// clear array
-// const clearArray = document.querySelector('.clear').addEventListener('dblclick', () => {
-//     inputArray = [];
-//     display.textContent = '0';
-//     solDisplay.textContent = '';
-//     divideOp.style.backgroundColor = '';
-//     multiplyOp.style.backgroundColor = '';
-//     subtractOp.style.backgroundColor = '';
-//     addOp.style.backgroundColor = '';
-// })
-
-// get sol display
-const solDisplay = document.querySelector('#sol-display');
-
 // equals function
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
-    inputArray.push(parseFloat(display.textContent));
-    inputArray.push(parseFloat(operate(inputArray)));
-    display.textContent = '';
-    display.textContent = inputArray[inputArray.length - 1];
-    // display.textContent += '=';
-
+        inputArray.push(parseFloat(display.textContent));
+        inputArray.push(parseFloat(operate(inputArray)));
+        display.textContent = '';
+        display.textContent = inputArray[inputArray.length - 1];
 })
 
-// function to check if button was clicked?
-// const checkForOp = (opBtn) => {
-//     if (opBtn.style.backgroundColor === 'lightgrey') {
-//         clearBtn();
-//     }
-// };
