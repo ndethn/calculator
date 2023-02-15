@@ -3,17 +3,17 @@
 // create basic math functions
 const add = (a, b) => {
     sol = a + b;
-    return sol;
+    return Math.round(sol * 100) / 100;
 }
 
 const subtract = (a, b) => {
     sol = a - b
-    return sol;
+    return Math.round(sol * 100) / 100;
 }
 
 const multiply = (a, b) => {
     sol = a * b
-    return sol;
+    return Math.round(sol * 100) / 100;
 }
 
 const divide = (a, b) => {
@@ -22,7 +22,7 @@ const divide = (a, b) => {
         return;
     } else {
         sol = a / b;
-        return sol;
+        return Math.round(sol * 100) / 100;
     }
 }
 
