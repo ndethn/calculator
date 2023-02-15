@@ -18,8 +18,13 @@ const multiply = (a, b) => {
 }
 
 const divide = (a, b) => {
-    sol = a / b;
-    return sol;
+    if (typeof(b) === 0) {
+        display.textContent = 'LOL';
+        return;
+    } else {
+        sol = a / b;
+        return sol;
+    }
 }
 
 // create operate function
@@ -229,7 +234,7 @@ divideOp.addEventListener('click', () => {
         display.textContent = operate(slicedArray);
         inputArray.push(parseFloat(display.textContent));
         inputArray.push('divide');
-        inputArray.splice(0,4);
+        inputArray.splice(0, 4);
     }
 
     divideOp.style.backgroundColor = 'lightgrey';
@@ -246,7 +251,7 @@ multiplyOp.addEventListener('click', () => {
         display.textContent = operate(slicedArray);
         inputArray.push(parseFloat(display.textContent));
         inputArray.push('multiply');
-        inputArray.splice(0,4);
+        inputArray.splice(0, 4);
     }
 
     multiplyOp.style.backgroundColor = 'lightgrey';
@@ -263,7 +268,7 @@ subtractOp.addEventListener('click', () => {
         display.textContent = operate(slicedArray);
         inputArray.push(parseFloat(display.textContent));
         inputArray.push('subtract');
-        inputArray.splice(0,4);
+        inputArray.splice(0, 4);
     }
 
     subtractOp.style.backgroundColor = 'lightgrey';
@@ -280,7 +285,7 @@ addOp.addEventListener('click', () => {
         display.textContent = operate(slicedArray);
         inputArray.push(parseFloat(display.textContent));
         inputArray.push('add');
-        inputArray.splice(0,4);
+        inputArray.splice(0, 4);
     }
 
     addOp.style.backgroundColor = 'lightgrey';
@@ -300,9 +305,15 @@ const clearBtn = document.querySelector('.clear').addEventListener('click', () =
 
 // equals function
 const equalsBtn = document.querySelector('.equals').addEventListener('click', () => {
-        inputArray.push(parseFloat(display.textContent));
-        inputArray.push(parseFloat(operate(inputArray)));
-        display.textContent = '';
-        display.textContent = inputArray[inputArray.length - 1];
+    inputArray.push(parseFloat(display.textContent));
+
+    if (inputArray[2] === 0) {
+        display.textContent = 'LOL';
+        return;
+    }
+
+    inputArray.push(parseFloat(operate(inputArray)));
+    display.textContent = '';
+    display.textContent = inputArray[inputArray.length - 1];
 })
 
